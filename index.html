@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>My Personal Website</title>
@@ -6,19 +7,19 @@
 		<div id="title">
 			<h1>Welcome to My Personal Website</h1>
 			<p>Where dreams come true</p>
-			<button onclick="makeDreamComeTrue">Click to make dream come true</button>
+			<button onclick="makeDreamComeTrue()">Click to make dream come true</button>
 		</div>
 	</body>
 </html>
 
 <style>
 	body {
-		background-image: "https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg";
+		background-image: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg");
 		background-size: cover;
 	}
 	
 	h1 {
-		color: blue
+		color: blue;
 	}
 	
 	#title {
@@ -26,11 +27,17 @@
 		text-align: center;
 		margin-top: 50px;
 	}
+	
+	button:hover {
+		color: green;
+		font-size: 20px;
+		cursor: pointer;
+	}
 </style>
 
 <script>
 	function makeDreamComeTrue() {
-		document.body.style.background-image = 'url("https://media.tenor.com/nANqORN7qhQAAAAM/explosion-explode.gif")';
-		
+		document.body.style.background = 'url("https://media.tenor.com/nANqORN7qhQAAAAM/explosion-explode.gif")';
+		document.getElementById("title").style.visibility = "hidden";
 	}
 </script>
