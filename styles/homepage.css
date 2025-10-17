@@ -8,13 +8,8 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  background-image: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg");
-  background-size: cover;
-}
-
 h1 {
-  color: blue;
+  color: white;
 }
 
 #title {
@@ -32,4 +27,6 @@ button:hover {
 .main-section {
   border: solid red 2px;
   padding: 40vh;
+  background-size: cover;
+  background-image: url("../images/main-background.png");
 }
