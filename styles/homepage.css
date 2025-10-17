@@ -1,3 +1,13 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg");
   background-size: cover;
@@ -10,7 +20,7 @@ h1 {
 #title {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  height: 100vh;
 }
 
 button:hover {
@@ -21,4 +31,5 @@ button:hover {
 
 .main-section {
   border: solid red 2px;
+  padding: 40vh;
 }
